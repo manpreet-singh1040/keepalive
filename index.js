@@ -8,10 +8,10 @@ app.get('/keepalive',(req,res)=>{
 })
 
 
-/*setInterval(()=>{
+setInterval(()=>{
     try{
         console.log('trying to fetch');
-        fetch('https://chatapp-f1kr.onrender/keepalive')
+        fetch('https://chatapp-f1kr.onrender.com/keepalive')
         .then(res=> res.json())
         .then(res=> console.log(`fetch complete !! ${res}`))
         .catch(err=> console.error(err));
@@ -19,5 +19,5 @@ app.get('/keepalive',(req,res)=>{
     catch(err){
         console.error('Error:', err);
     }
-},60000);*/
+},60000);
 app.listen(8080,()=>{console.log('server is live!!')});
