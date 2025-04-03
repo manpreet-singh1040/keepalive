@@ -7,6 +7,11 @@ app.get('/keepalive',(req,res)=>{
     res.json({status:true});
 })
 
+app.get('/',(req,res)=>{
+    console.log('got a request');
+    res.json({status:true, mes:"server is running"});
+})
+
 
 setInterval(()=>{
     try{
